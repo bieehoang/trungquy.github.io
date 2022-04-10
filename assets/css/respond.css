@@ -1,0 +1,140 @@
+.btn{
+    max-width: 200px;
+    background-color:transparent;
+    outline: none;
+    text-decoration: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    cursor: pointer;
+    padding: 12px 42px;
+    color: #333;
+    opacity: 1;
+    transition: opacity 0.2s linear;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+.btn--disable{
+    cursor:default;
+    opacity: 0.5 !important;
+}
+
+.btn + .btn{
+    margin-top: 10px;
+}
+
+.btn__click--success{
+    background-color: rgb(16, 148, 16);
+}
+
+.btn__click--warning{
+    background-color: rgb(192, 43, 43);
+
+}
+
+.btn__click--danger{
+    background-color: rgb(184, 184, 18);
+
+}
+
+.toast{
+    display: flex;
+    padding: 6px 0;
+    background-color:beige;
+    align-items: center;
+    border-radius: 20px;
+    border-left: 6px solid;
+    min-width: 400px;
+    max-width: 480px;
+    transform: translateX(calc( 100% + 16px ) );
+    animation: GoIn linear 0.3s, GoIn ease 1s 3s forwards;
+}
+
+@keyframes GoIn{
+    from{
+        opacity: 0;
+        transform: translateX(calc( 100% + 16px ) );
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0)
+    }
+}
+
+
+#toast{
+    position: fixed;
+    right: 0;
+    margin-right: 16px;
+}
+
+.toast + .toast{
+    margin-top: 10px;
+}
+
+.toast__icon{
+    margin:0 24px;
+    font-size: 30px;
+}
+
+.toast--success{    
+    border-color: rgb(24, 238, 34);
+}
+
+.toast--success .toast__icon{
+    color: rgb(24, 238, 34);
+
+}
+
+.toast--error{
+    border-color:rgb(222, 252, 89);
+}
+
+.toast--error .toast__icon{
+    color: rgb(222, 252, 89);
+    
+}
+
+.toast--danger{
+    border-color:rgb(196, 18, 18);
+}
+
+.toast--danger .toast__icon{
+    color: rgb(196, 18, 18);;
+}
+
+
+.toast__body{
+    flex-grow: 1;
+}
+
+.toast__title{
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.toast__message{
+    margin-top: 4px;
+
+}
+
+.toast__close{
+    margin:0 24px;
+    cursor: pointer;
+}
+
+.toast__close:hover{
+    opacity: 0.8;
+}
+
+
+
+
+
+

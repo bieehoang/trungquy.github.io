@@ -1,0 +1,622 @@
+/* Reset CSS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box !important;
+}
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Clear css Position */
+.clear{
+    clear: both;
+}
+
+/* 
+Từ ngoài vào trong
+Từ trên xuống dưới
+Tổng quan > Chi tiết  
+*/
+
+/* 
+3 Màu sắc
+4 Kiểu dáng ( font ) 
+*/
+
+/* Comon */
+.text-white{
+    color: white !important;
+}
+
+.col-two{
+    width: 50%;
+}
+
+
+.width-max{
+    width: 100%;
+}
+
+.bd-solid{
+    border: solid;
+}
+
+.click-pointer{
+    cursor: pointer !important;
+}
+
+
+/* Header */
+#header{
+    background-color: #ffd154;
+    height: 46px;
+    position: fixed;
+    width: -webkit-fill-available;
+    top: 0;
+    z-index: 1;
+}
+
+
+#nav li{
+    display: inline-block;
+}
+
+
+#nav > li > a{
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    line-height: 46px;
+    padding:0 24px;
+    box-sizing: border-box;
+    color: #002795;;
+    font-weight: 600;
+}
+
+#nav li:hover .subnav{
+    display:block ;
+}
+/* */
+#nav .subnav li:hover,
+#nav > li:hover > a{
+    background-color: #ccc;
+    color: black;
+    display: block;
+
+}
+
+ul .subnav{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position:absolute;
+    background-color: #ffd154;
+    min-width: 140px;
+}
+
+#nav .subnav{
+    display: none;
+}
+
+#nav .subnav a{
+    color: #002795;
+    line-height: 38px;
+    padding:2px 12px;
+    display: block;
+    width: 162px;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+
+.subnav li{
+    display: block !important;;
+}
+
+#nav .nav-icon{
+    font-size: 12px;
+}
+
+#nav .nav-icon-search{
+    float: right;
+}
+
+#nav .nav-icon-search li{
+    width: 62px;
+    box-sizing: border-box;
+}
+
+#nav .ti-search{
+    color: white;
+}
+
+#nav .nav-icon-search:hover li{
+    background-color:#f44336;
+    color: white;
+}
+
+/* Background - IMG - Slider */
+#slider {
+    position: relative;
+    margin-top: 28px;
+    padding-top: 57%;
+    background-image: url(./img/img-slider.jpg);
+    background-origin: top center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.sub-img1-slider{
+    position: absolute;
+    font-variant-caps: petite-caps;
+    bottom: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+.head-content-img1{
+    font-size: 24px;
+}
+
+
+.sub-content-img1{
+    text-shadow: 0 0 15px black;
+    font-size: 2.2rem;
+    width: 50%;
+    margin: 16% auto;
+    color: #ffd154;
+}
+
+
+/* Main Content */
+.about-content{
+    
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 16px 100px;
+
+}    
+.heading-section{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.sologan-heading-section{
+    text-align: center;
+    font-size: 15px;
+    opacity: 0.7;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+.text-content {
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}   
+
+.text-content p{
+    margin: 20px 0;
+}
+#container .img-show-member{
+    text-align: center;
+    display: inline-block;
+    width:32%;
+    margin-top: 47px;
+
+}
+
+#container .member-name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: #002795;
+
+}
+
+#container .img{
+    width: 200px;
+    border-radius: 5px; 
+}
+
+/* About tour moving on */
+.tour-section{
+    background-color: #757575;
+
+}
+
+.about-ticket li{
+    font-size: 15px;
+    padding: 10px 16px;
+    border-bottom: 1px solid #ccc;
+    color:#757575;
+    list-style: none;
+    text-align: center;
+}
+
+.about-ticket{
+    background-color: white;
+    margin-top:50px;
+}
+
+.ticket{
+    background: #F44336;
+    color: white;
+    padding: 5px;
+    margin: -5px;
+    margin-right: 165px;
+    float: right;
+}
+
+
+.number-lots{
+    float: right;
+    border-radius: 48%;
+    background-color: black;
+    padding: 0px 10px;
+    text-size-adjust: 100%;
+    color: white;
+    line-height: 22px;
+    margin: -1px 165px 0px 0px;
+    text-align: center;
+}
+
+.about-place{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 7px;
+    padding-bottom: 80px;
+
+}
+
+.place-body{
+    float: left;
+    width: 33.333%;
+    padding: 0 8px;
+    max-height: 800px;
+
+}
+
+
+.place-item{
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -20px;
+    
+}
+
+.place-img{
+    padding: 0 8px;
+    display: block;
+    height: 182px;
+}
+
+img.place-img:hover {
+    opacity: 0.8;
+}
+
+
+
+.infor-place{
+    background-color: #fff;
+    padding: 0 16px;
+    margin-top: -15px;
+    padding-bottom: 10px;
+    text-align: center;
+    
+}
+
+.name-place{
+    margin: 15px 0;
+    padding-top: 15px;
+    height: 50px;
+
+}
+
+.time-place{
+    margin: 15px 0;
+    color: #757575;
+}
+
+.infor-paragraph{
+    margin: 15px 0;
+    margin-bottom: 30px;
+    line-height: 25px;
+    text-align: start;
+    height: 150px;
+}
+
+.buy-button{
+    margin: 15px 0;
+    padding: 10px 16px;
+    color: white;
+    text-decoration: none;
+    background-color: #ffd154;
+    border-radius: 12px;
+
+}
+
+.buy-button:hover{
+    background-color: #757575;
+}
+
+/* Modal when click buy button */
+.modal{
+    position: fixed;
+    display: flex;
+    top: 0; 
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    align-items: center;
+    justify-content: center;
+    display: none;
+    z-index: 1;
+}
+
+.modal.open{
+    display: flex;
+}
+
+.modal-container{
+    background-color: #fff;
+    width: 900px;
+    position: relative;
+    /* Chỉnh animation cho thẻ Modal - Hiệu ứng - thời gian chạy */
+    animation: modalAnimation ease 0.6s;
+}
+
+.modal-header{
+    background-color: #ffd154;
+    padding: 32px 16px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 30px;
+    color: white;
+    letter-spacing: 5px;
+}
+
+.modal-close{
+    position: absolute;
+    color: white;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    opacity: 0.4;
+}
+
+.modal-close:hover{
+    opacity: 1;
+}
+
+.modal-body{
+    padding: 0 16px;
+    display: grid;
+}
+
+.modal-label{
+    margin: 15px 0;
+}
+
+#modal-input-1{
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#modal-input-2  {
+    padding: 8px;
+}
+
+.modal-button{
+    padding: 16px 16px;
+    margin: 25px 0;
+    background-color: #ffd154;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: none;
+}
+
+.modal-button:hover{
+    background-color: #757575;
+
+}
+
+.modal-footer{
+    padding: 0 16px;
+    float: right;
+    padding-bottom: 25px;
+}
+
+.support-modal{
+    color: #2196F3;
+}
+
+/* Location - Contact */
+
+.about-contact{
+    display: flex;
+    padding: 32px 0;
+    padding-bottom: 10px;
+}
+
+.about-infor-contact{
+    font-size: 18px;
+}
+
+.infor-contact{
+    margin: 12px 0;
+}
+
+.location{
+    text-decoration: none;
+    color: black;
+}
+
+.location:hover{
+    color: #2196F3;
+}
+
+.about-infor-contact i[class*="ti-"]{
+    padding: 10px;
+}
+
+.input-infor input[id*="drop-"]{
+    border: 1px solid;
+}
+
+
+#drop-name{   
+    width: 48%;
+    padding: 8px;
+    margin-bottom: 0px;
+    margin-right: 7px;
+}
+
+#drop-email{    
+    width: 48%;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+#drop-message{
+    width: 99%;
+    padding: 15px;
+    margin-top: 2px;
+}
+
+.send-button{
+    background-color: #ffd154;
+    color: #fff;
+    padding: 10px 18px;
+    float: right;
+    text-transform: uppercase;
+    border-radius: 12px;
+    margin-top: 10px;
+}
+
+.send-button:hover{
+    background-color: #757575;
+}
+
+.map{
+    filter: grayscale(50%);
+}
+
+#footer{
+    background-color: white;
+    text-align: center;
+    padding-bottom: 64px;
+
+}
+
+.icon-link{
+    padding: 64px 0 10px;
+}
+
+.icon-link a[class*="ti-"]{
+    padding: 4px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.ending-footer{
+    font-size: 14px;
+    font-style: italic;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0 .6);
+    margin-top: 12px;
+}
+
+a[class*="ti-"]:hover{
+    opacity: 0.8;
+}
+
+.icon-link .ti-facebook:hover{
+    color: rgb(94, 164, 245);
+}
+
+.icon-link .ti-instagram:hover{
+    color: rgb(236, 162, 205);
+}
+
+.icon-link .ti-skype:hover{
+    color: rgb(77, 198, 255);
+}
+
+.icon-link .ti-twitter-alt:hover{
+    color: rgb(23, 117, 240);
+}
+
+.icon-link .ti-linkedin:hover{
+    color: rgb(167, 194, 253);
+}
+
+.end-heading a{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.end-heading:hover a{
+    color: rgba(111, 182, 230, 2);
+}
+/* Làm chuyển động cho modal */
+@keyframes modalAnimation{
+    from{ 
+        transform: translateY(-220px);
+
+    }
+    to{
+        transform: translateY(0);
+
+    }
+}
+
+@keyframes nav-input-mobile{
+    from{
+        transform: translateX(-100%);   
+    }
+    to{
+        transform: translateX(0);
+    }
+}
+
+/* Modal Mobile */
+
+#nav-input-mobile:checked ~ .modal-menu-mobile{
+    transform: translateX(0%);
+}
+
+#nav-input-mobile:checked ~ .overley{
+    display: block;
+}
+
+.overley{
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    position: fixed;
+}
+
+/* .nav-input-mobile,
+.modal-menu-mobile{
+    display: none;
+} */
+
+
